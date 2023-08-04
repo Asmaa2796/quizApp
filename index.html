@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#041E50" />
+    <link rel="shortcut icon" href="images/quiz.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz app</title>
+</head>
+<body>
+    
+    <!-- quiz -->
+    <div class="quiz-app">
+        <h3>Simple Quiz</h3>
+        <hr>
+        <div class="quiz">
+            <h4 class="question"></h4>
+            <div class="answer-btns"></div>
+            <button class="next">Next <img src="images/right-arrow.png" alt=""></button>
+        </div>
+        <img src="images/free.gif" class="congs" alt="">
+    </div>
+
+    <!-- sounds -->
+    <audio controls class="correctSound sounds" autoplay>
+        <source src="correct.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="inCorrectSound sounds" autoplay>
+        <source src="incorrect.mp3" type="audio/mp3">
+    </audio>
+    <audio controls class="win sounds" autoplay>
+        <source src="win.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="copyright">All rights reserved &copy; 2023 Asmaa Saad</div>
+
+    <script src="main.js"></script>
+</body>
+</html>

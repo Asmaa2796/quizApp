@@ -1,0 +1,98 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(-270deg, #033484, #1298cd);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Regular.ttf);
+}
+button:focus {outline: none;}
+/* app */
+.quiz-app {
+    background-color: #fff;
+    width: 500px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 17px 0px #344561c7;
+}
+
+.quiz-app h3 {
+    font-weight: bold;
+    color: #1298cd;
+}
+.quiz {z-index: 888;position: relative;}
+.quiz hr {
+    margin: 0;
+}
+
+.answer-btns button {
+    text-align: left;
+    width: 100%;
+    background-color: #eeeeeed3;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #666;
+    transition: all .3s ease-in-out;
+    display: block;
+}
+
+.answer-btns button:disabled {cursor: no-drop;}
+.answer-btns button.correct {
+    background-color: #3cb23c;
+    color: #fff;
+}
+
+.answer-btns button.inCorrect {
+    background-color: #e58e8e;
+    color: #fff;
+}
+
+.answer-btns button b {
+    float: right;
+}
+
+.next {
+    width: 100px;
+    margin: 20px auto;
+    background-color: #033484;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #fff;
+    border: none;
+    display: block;
+    border-radius: 5px;
+    display: none;
+}
+.next img {width: 8px;height: 8px;display: inline-block;margin-left: 6px;}
+
+.sounds {display: none;}
+.quiz-app {
+    overflow: hidden;
+    position: relative;
+}
+
+.congs {
+    display: none;
+    width: 100%;
+    margin: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* copyright */
+.copyright {
+    text-align: center;
+    font-size: small;
+    color: #fbfbfb;
+    margin: 20px 0;
+}
+
+/* media */
+@media(width < 567px) {
+    .quiz-app {width: 74%;}
+}
